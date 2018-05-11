@@ -28,10 +28,16 @@ $usuario->login("root", "!@-sd");
 echo $usuario;
 */
 
+/*
+//Criando um novo usuário
 $aluno = new Usuario("aluno","@lun0");
-
 $aluno->insert();
-
 echo $aluno;
+*/
+
+$usuario = new Usuario();
+$usuario->loadbyID(13);
+$usuario->update("professor", "pr0fess0r");
+echo $usuario;
 
 ?>
